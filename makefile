@@ -9,7 +9,7 @@ executable = gol
 all: $(executable)
        
 gol: $(objects)
-		$(CC) $(CFLAGS) $(LDFLAGS) $(WFLAGS) $(SGDIR)/sg.c gol.c -o main main.c
+		$(CC) $(CFLAGS) $(LDFLAGS) $(WFLAGS) $(SGDIR)/sg.c gol.c -o gol main.c
 
 clean: 
 		$(RM) $(objects) $(executable)		
